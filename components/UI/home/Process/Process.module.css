@@ -1,0 +1,44 @@
+.process {
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px 70px 80px;
+    align-items: flex-start;
+    border-bottom: 1px solid #e6eaf0;
+    .item {
+        text-align: center;
+        h3 {
+            margin-top: 15px;
+            font-family: var(--heading-font-family);
+            color: var(--color-heading-text);
+            font-size: 1.6rem;
+        }
+        p {
+            margin-top: 15px;
+            color: var(--color-text-small);
+            line-height: 2.6rem;
+            font-size: 1.4rem;
+        }
+        img {
+            &:hover {
+                animation: moveUp 0.5s linear;
+                transform: translateY(-10px);
+            }
+        }
+    }
+    .img-to-item {
+        .line1 {
+            margin-top: 90px;
+        }
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

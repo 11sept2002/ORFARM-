@@ -1,0 +1,134 @@
+.ads {
+    width: 100%;
+    height: 840px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#e6eaf0, #ffffff);
+}
+
+.ads-container {
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    padding-left: 50px;
+    h5 {
+        text-transform: uppercase;
+        color: var(--color-text-title);
+        margin-bottom: 60px;
+        animation: appear 5s ease-in;
+    }
+    h1 {
+        color: var(--color-heading-text);
+        font-family: var(--heading-font-family);
+        font-size: 5.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        animation: runTitle 5s ease-in;
+    }
+    p {
+        color: var(--color-text-small);
+        animation: runContent 5s ease-in;
+    }
+    a {
+        display: block;
+        width: 170px;
+        height: 50px;
+        margin-top: 60px;
+        border-radius: 50px;
+        background: var(--color-text-title);
+        text-align: center;
+        line-height: 50px;
+        font-size: 1.8rem;
+        font-family: var(--heading-font-family);
+        font-weight: 700;
+        color: #ffffff;
+        animation: runContent 5s ease-in;
+    }
+}
+.img {
+    padding-right: 50px;
+    animation: runImg 5s infinite linear;
+    position: relative;
+    .revo-2 {
+        position: absolute;
+        top: 50px;
+        left: -50px;
+    }
+    .revo-3 {
+        position: absolute;
+        right: 100px;
+        bottom: 0;
+    }
+}
+
+@keyframes runImg {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    80% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes runTitle {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    90% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+@keyframes runContent {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

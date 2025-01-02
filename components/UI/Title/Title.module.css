@@ -1,0 +1,22 @@
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+    h4 {
+        font-family: var(--heading-font-schoolbell);
+        color: var(--color-text-title);
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-family: var(--heading-font-family);
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--color-heading-text);
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    p {
+        color: var(--color-text-small);
+        font-size: 1.4rem;
+    }
+}

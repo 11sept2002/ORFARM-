@@ -1,0 +1,110 @@
+.wrapper {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e6eaf0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 10px 30px rgb(61 110 168 / 10%);
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-menu {
+    height: 100%;
+    padding: 0 15px;
+    .menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .item {
+            padding: 0 15px;
+            a {
+                font-family: var(--heading-font-family);
+                height: 100%;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: var(--color-heading-text);
+            }
+            &:hover {
+                cursor: pointer;
+                a {
+                    color: var(--color-text-title);
+                }
+            }
+        }
+    }
+}
+
+.header-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+
+    .right-logo {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+        border: 1px solid none;
+        border-radius: 50%;
+        margin: 0 5px;
+        position: relative;
+        .icon {
+            width: 1.6rem;
+            color: var(--color-heading-text);
+        }
+        .count {
+            height: 18px;
+            width: 18px;
+            background-color: #ea0d42;
+            border: 1px solid none;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 18px;
+            color: #fff;
+            position: absolute;
+            right: 0;
+            top: -5px;
+        }
+        &:hover {
+            cursor: pointer;
+            .icon {
+                color: var(--color-text-title);
+            }
+        }
+    }
+    .search {
+        background-color: #f5f2ff;
+    }
+    .user {
+        background-color: #fff3ec;
+    }
+    .love {
+        background-color: #ecfbff;
+    }
+    .cart {
+        background-color: #feefd0;
+    }
+}
+.active {
+    color: var(--color-text-title) !important;
+}

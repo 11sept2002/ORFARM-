@@ -1,0 +1,31 @@
+.button-go-top {
+    width: 50px;
+    height: 50px;
+    background: var(--color-text-title);
+    position: fixed;
+    z-index: 5;
+    right: 40px;
+    bottom: 60px;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: btn 0.5s linear;
+    .icon {
+        width: 16px;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

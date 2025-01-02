@@ -1,0 +1,18 @@
+.not-found {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    h1 {
+        font-family: var(--heading-font-family);
+        color: var(--color-text-title);
+        font-size: 10rem;
+    }
+}
