@@ -1,0 +1,151 @@
+.product-feature-area {
+    background-color: #f9f9f9;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  
+  .product-feature .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .tpfeature__thumb {
+    position: relative;
+    padding-bottom: 40px;
+  }
+  
+  .tpfeature__thumb img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tpfeature__shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .tpfeature__shape-one,
+  .tpfeature__shape-two,
+  .tpfeature__shape-three {
+    position: absolute;
+  }
+  
+  .tpfeature__shape-one {
+    top: 0;
+    left: 0;
+  }
+  
+  .tpfeature__shape-two {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .tpfeature__shape-three {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .tpfeature__content {
+    margin-bottom: 35px;
+  }
+  
+  .tpsection__sub-title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .tpsection__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .tpfeature__title span {
+    color: #ff5722; /* Accent color */
+  }
+  
+  .tpfeature__box {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tpfeature__product-item {
+    margin-bottom: 25px;
+  }
+  
+  .tpfeature__product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .tpfeature__product-info,
+  .tpfeature__product- {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .tpfeature__btn {
+    text-align: center;
+  }
+  
+  .tp-btn-3,
+  .tp-btn-4 {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tp-btn-3:hover,
+  .tp-btn-4:hover {
+    background-color: #e64a19;
+  }
+  
+  .tp-btn-4 {
+    background-color: #4caf50;
+  }
+  
+  .tp-btn-4:hover {
+    background-color: #388e3c;
+  }
+  
+  .tpfeature__shape.d-none.d-md-block {
+    display: block;
+  }
+  
+  @media (max-width: 991px) {
+    .tpfeature__shape.d-none.d-md-block {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .product-feature-area {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  
+    .tpfeature__content h4 {
+      font-size: 24px;
+    }
+  
+    .tpfeature__box {
+      margin-bottom: 20px;
+    }
+  
+    .tpfeature__product-item {
+      margin-bottom: 15px;
+    }
+  }
+  

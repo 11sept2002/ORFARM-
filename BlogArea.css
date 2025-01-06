@@ -1,0 +1,133 @@
+/* Blog Area */
+.blog-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+  }
+  
+  .grey-bg {
+    background-color: #e0e0e0;
+  }
+  
+  .tpsection {
+    margin-bottom: 35px;
+  }
+  
+  .tpsection__sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .tpsection__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .tpsection p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+  }
+  
+  .tpblog__item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .tpblog__thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+  }
+  
+  .tpblog__wrapper {
+    padding: 20px;
+  }
+  
+  .tpblog__entry-wap {
+    margin-bottom: 15px;
+  }
+  
+  .cat-links a,
+  .author-by a,
+  .post-data a {
+    font-size: 14px;
+    color: #007bff;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .tpblog__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .tpblog__title a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .tpblog__title a:hover {
+    color: #007bff;
+  }
+  
+  .tpblog__details a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .tpblog__details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Swiper Styles */
+  .swiper-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+  }
+  
+  .swiper-slide {
+    flex: 1 0 30%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .swiper-slide:last-child {
+    margin-right: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .tpsection__title {
+      font-size: 24px;
+    }
+  
+    .swiper-slide {
+      flex: 1 0 45%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .tpsection__title {
+      font-size: 20px;
+    }
+  
+    .swiper-slide {
+      flex: 1 0 100%;
+    }
+  }
+  

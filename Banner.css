@@ -1,0 +1,66 @@
+/* Banner Area */
+.banner-area {
+    background-color: #f8f8f8;
+    padding-bottom: 60px;
+  }
+  
+  .grey-bg {
+    background-color: #e0e0e0;
+  }
+  
+  .tpbanner__item {
+    position: relative;
+  }
+  
+  .tpbanner__content {
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: #fff;
+    text-align: left;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .tpbanner__sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .tpbanner__sub-title.tpbanner__white {
+    color: #fff;
+  }
+  
+  .tpbanner__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tpbanner__content p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 992px) {
+    .col-lg-4 {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      width: 100%;
+    }
+  
+    .tpbanner__content {
+      height: 250px;
+      padding: 20px;
+    }
+  }
+  

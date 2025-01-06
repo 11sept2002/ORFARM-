@@ -1,0 +1,50 @@
+
+.category-area {
+    padding-bottom: 40px;
+  }
+  
+  .category__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category__thumb {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .category__thumb img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .category__content {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .category__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .category__count {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Additional styling for Swiper area */
+  .grey-bg {
+    background-color: #f5f5f5;
+  }
+  
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+  
+  .pb-40 {
+    padding-bottom: 40px;
+  }
+  

@@ -1,0 +1,97 @@
+/* Basic styling for the slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+/* Slide styles for fade effect */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Fade effect */
+  display: flex;
+  justify-content: space-between; /* Align text and image */
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1; /* Visible slide */
+  z-index: 1; /* Ensure active slide is on top */
+}
+
+
+.slider img {
+  width: 50%; /* Image occupies 50% of the width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  position: relative; /* Image aligns with its container */
+  right: 0; /* Align to the right */
+}
+
+/* Responsive image styling */
+@media (max-width: 768px) {
+  .slider img {
+    width: 100%; /* Fill width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .slider-text {
+    width: 100%; /* Take full width on smaller screens */
+  }
+}
+
+/* Navigation button styles */
+.slider-button {
+  position: absolute;
+  top: 90%; /* Lowered the position to be closer to the bottom */
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: lightgreen;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-button.prev {
+  left: 20px;
+}
+
+.slider-button.next {
+  right: 20px;
+}
+
+.slider-button:hover {
+  background-color: #90ee90;
+}
+
+/* SHOP NOW button styling */
+.shop-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: lightgreen; /* Change color on hover */
+}
